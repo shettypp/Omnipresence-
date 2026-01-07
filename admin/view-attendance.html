@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>View Attendance</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+<div class="dashboard">
+  <h2>Attendance Records</h2>
+
+  <!-- FILTERS -->
+  <div class="filters">
+    <input id="classFilter" placeholder="Class (e.g. CSE-5A)">
+    <input id="subjectFilter" placeholder="Subject (e.g. DBMS)">
+    <input id="dateFilter" type="date">
+
+    <button id="filterBtn">Apply Filter</button>
+  </div>
+
+  <!-- TABLE -->
+  <table id="attendanceTable">
+    <thead>
+      <tr>
+        <th>USN</th>
+        <th>Class</th>
+        <th>Subject</th>
+        <th>Status</th>
+        <th>Time</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+
+  <p id="status"></p>
+</div>
+
+<script type="module" src="js/admin-attendance.js"></script>
+</body>
+</html>

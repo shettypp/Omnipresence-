@@ -1,0 +1,73 @@
+:root {
+    --pink: #FF1CF7;
+    --bg: #0d0d0d;
+    --card: #1a1a1a;
+    --white: #ffffff;
+}
+
+body {
+    background: var(--bg);
+    color: var(--white);
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+/* Responsive Container */
+.container {
+    width: 100%;
+    max-width: 1000px; /* Wider for Admin Laptop view */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Card Styling with Mobile Padding */
+.card {
+    background: var(--card);
+    padding: 25px;
+    border-radius: 16px;
+    border-top: 4px solid var(--pink);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Adaptive Grid for Admin Dashboard */
+.admin-grid {
+    display: grid;
+    grid-template-columns: 1fr; /* Default: Stacked for Mobile */
+    gap: 20px;
+}
+
+/* --- MOBILE OPTIMIZATIONS --- */
+input, button {
+    width: 100%;
+    padding: 16px; /* Larger hit area for thumbs */
+    margin: 10px 0;
+    font-size: 16px; /* Prevents iOS auto-zoom on focus */
+    border-radius: 12px;
+    box-sizing: border-box;
+}
+
+/* --- LAPTOP OPTIMIZATIONS (Screens wider than 768px) --- */
+@media (min-width: 768px) {
+    .admin-grid {
+        grid-template-columns: 350px 1fr; /* Side-by-side for Laptop */
+    }
+    
+    .card {
+        padding: 40px;
+    }
+
+    /* Keep auth cards centered and slim on wide screens */
+    .auth-card {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+}

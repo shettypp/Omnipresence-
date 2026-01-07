@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Admin Dashboard</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+<div class="dashboard">
+  <h2>Admin Dashboard</h2>
+
+  <form id="qrForm">
+    <div class="form-group">
+      <label>Class</label>
+      <input type="text" id="classInput" required>
+    </div>
+
+    <div class="form-group">
+      <label>Subject</label>
+      <input type="text" id="subjectInput" required>
+    </div>
+
+    <div class="form-group">
+      <label>Time (eg: 10:00-11:00)</label>
+      <input type="text" id="timeInput" placeholder="HH:MM-HH:MM" required>
+    </div>
+
+    <button type="submit" id="generateBtn">Generate QR</button>
+  </form>
+</div>
+
+<script src="js/admin-dashboard.js"></script>
+</body>
+</html>

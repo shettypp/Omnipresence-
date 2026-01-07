@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Signup</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/tasks-vision@latest"></script>
+</head>
+<body>
+
+<h2>Signup</h2>
+
+<input id="name" placeholder="Full Name"><br>
+<input id="usn" placeholder="USN"><br>
+<input id="email" placeholder="Email"><br>
+<input id="password" type="password" placeholder="Password"><br><br>
+
+<!-- 🔴 FIX IS HERE: muted -->
+<video id="video" muted playsinline></video><br>
+
+<button id="startCamera">Start Camera</button>
+<button id="signupBtn">Enroll & Signup</button>
+
+<p id="status"></p>
+
+<script type="module" src="js/signup.js"></script>
+</body>
+</html>

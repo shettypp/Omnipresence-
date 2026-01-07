@@ -1,0 +1,39 @@
+body {
+  background: black;
+  color: white;
+  font-family: Arial;
+  text-align: center;
+  padding-top: 40px;
+}
+
+h1, h2 {
+  color: #ff69b4;
+}
+
+input {
+  padding: 10px;
+  margin: 8px;
+  width: 250px;
+  border-radius: 6px;
+  border: none;
+}
+
+button {
+  padding: 12px 20px;
+  margin: 10px;
+  background: #ff69b4;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+video {
+  width: 280px;
+  border-radius: 12px;
+  margin-top: 10px;
+}
+
+p {
+  min-height: 30px;
+}

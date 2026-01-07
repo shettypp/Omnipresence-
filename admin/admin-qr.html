@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css"> <title>Live Attendance QR</title>
+</head>
+<body>
+    <div class="container auth-card">
+        <h2>Live Attendance QR</h2>
+        <div class="card" style="text-align: center;">
+            <p id="sessionInfo" style="white-space: pre-line; margin-bottom: 20px;"></p>
+            
+            <div style="background: white; padding: 15px; display: inline-block; border-radius: 10px;">
+                <img id="qrImg" width="220" height="220" style="display: block;" />
+            </div>
+
+            <p id="timer" style="margin-top: 20px; font-size: 14px; opacity: 0.7;">
+                QR refreshes every 30 seconds
+            </p>
+
+            <button id="endSessionBtn" style="background: #444; margin-top: 20px;">
+                End Session
+            </button>
+        </div>
+    </div>
+
+    <script type="module" src="js/admin-qr.js"></script>
+</body>
+</html>
