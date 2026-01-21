@@ -1,7 +1,6 @@
-# Omnipresence-
+# Omnipresence: AI-Powered Attendance System
 Turning "Checking In" into "Proving Presence" via a decentralized verification stack. Built to block proxy attendance using real-time micro-challenges, GPS geofencing, and secure hardware-linked identification.
 
-🚀 Omnipresence: AI-Powered Attendance System
 Omnipresence is a high-security, multi-layered attendance solution designed to eliminate proxy attendance. It combines dynamic QR rotation, biometric face liveness detection, and hardware-based fraud prevention.
 
 ✨ Key Features
@@ -27,7 +26,6 @@ Vision AI: Google MediaPipe (Face Landmarker)
 Security: UUID v4 for session tokens, Supabase Service Role for protected DB operations
 
 📁 Project Structure
-Plaintext
 
 GD-HACK/
 ├── admin/               # Admin Portal (QR Generation & Logs)
@@ -37,38 +35,31 @@ GD-HACK/
 │   └── .env             # Supabase API Keys
 ├── style.css            # Global Styling
 └── index.html           # Landing Page
+
 🚀 Getting Started
+
 1. Prerequisites
 Node.js installed
-
 A Supabase Project
 
 2. Database Setup
 Create an attendance_logs table in Supabase with the following columns:
-
 usn (text), student_name (text), device_id (text), session_id (text), status (text), class_id (text), subject (text).
 
 3. Installation
-Bash
-
 cd server
 npm install
+
 4. Environment Variables
 Create a .env file in the /server folder:
-
-Code snippet
-
 SUPABASE_URL=your_supabase_url
 SUPABASE_SERVICE_KEY=your_service_role_key
-5. Run the Server
-Bash
 
+5. Run the Server
 node server.js
+
 📸 Demo Logic
 Admin logs in and starts a session for "Web Design - Class A".
-
 Student scans the dynamic QR code.
-
 Student passes the AI Face Liveness challenge.
-
 Backend checks if the device was already used and records the status as verified or fraud.
